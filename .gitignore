@@ -1,0 +1,29 @@
+# CMake generated files
+build/
+frame_extractor/.cache/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+frame_extractor/compile_commands.json
+compile_commands.json
+
+# Compiled output
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+*.obj
+
+# IDE specific files (adjust based on your IDE)
+.vs/
+.vscode/
+.DS_Store
+*.suo
+*.user
+
+# User-specific files
+frame_extractor/frames/*
+frame_extractor/FrameExtractor
