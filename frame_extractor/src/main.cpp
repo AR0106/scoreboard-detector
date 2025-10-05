@@ -47,7 +47,7 @@ void ProcessVideo(std::string url) {
     int64 frameCount = 0;
     while (true) {
         // Read frame from video
-        video >> frame;
+        video.grab();
         if (frame.empty()) {
             std::cout << "Video " << hash << " ended." << std::endl;
             break;
@@ -66,6 +66,7 @@ void ProcessVideo(std::string url) {
         int random_number = dist(rng);
 
         if (random_number == 1) {
+            video.retrieve(frame);
             cv::imwrite(filename + "_" + std::to_string(frameCount) + ".jpg", frame);
             std::cout << "Saved frame " << frameCount << " of video " << hash << std::endl;
         }

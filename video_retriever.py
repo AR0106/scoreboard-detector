@@ -36,7 +36,7 @@ signal.signal(signal.SIGPIPE, signal_handler)
 ydl = YoutubeDL(ydl_search_opts)
 
 videos = ydl.extract_info(
-    f"ytsearch{10}:{'high school football game stream'}", download=False
+    f"ytsearch{10}:high school {sys.argv[1]} game stream", download=False
 )
 
 video_urls = []
