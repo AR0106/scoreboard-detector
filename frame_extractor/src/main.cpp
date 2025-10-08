@@ -47,8 +47,7 @@ void ProcessVideo(std::string url) {
     int64 frameCount = 0;
     while (true) {
         // Read frame from video
-        video.grab();
-        if (frame.empty()) {
+        if (!video.grab()) {
             std::cout << "Video " << hash << " ended." << std::endl;
             break;
         }
