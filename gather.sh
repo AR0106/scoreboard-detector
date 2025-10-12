@@ -1,5 +1,3 @@
-#!/bin/zsh
-
 sports=("soccer" "basketball" "tennis" "football" "volleyball" "baseball" "hockey" "swimming" "golf" "tennis")
 
 for sport in "${sports[@]}"; do
