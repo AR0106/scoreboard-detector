@@ -30,13 +30,24 @@ ydl_video_opts = {
 def signal_handler(signum, frame):
     sys.exit(0)
 
+# Register handlers only for signals that exist on this platform.
+if hasattr(signal, 'SIGPIPE'):
+    try:
+        signal.signal(signal.SIGPIPE, signal_handler)
+    except Exception:
+        # Some environments may not allow setting SIGPIPE
+        pass
 
-signal.signal(signal.SIGPIPE, signal_handler)
+if hasattr(signal, 'SIGFPE'):
+    try:
+        signal.signal(signal.SIGFPE, signal_handler)
+    except Exception:
+        pass
 
 ydl = YoutubeDL(ydl_search_opts)
 
 videos = ydl.extract_info(
-    f"ytsearch{10}:high school {sys.argv[1]} game stream", download=False
+    f"ytsearch{1}:high school {sys.argv[1]} game stream", download=False
 )
 
 video_urls = []

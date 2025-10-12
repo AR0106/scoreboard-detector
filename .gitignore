@@ -27,3 +27,6 @@ compile_commands.json
 # User-specific files
 frame_extractor/frames/*
 frame_extractor/FrameExtractor
+frame_extractor/vcpkg_installed/
+
+.venv/
