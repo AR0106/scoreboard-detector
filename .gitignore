@@ -30,3 +30,15 @@ frame_extractor/FrameExtractor
 frame_extractor/vcpkg_installed/
 
 .venv/
+runs/
+uv.lock
+
+# Heavy data files
+*.jpg
+*.txt
+yolo11n.pt
+yolov8n.pt
+!data/Train.txt
+!data/val.txt
+!data/train_abs.txt
+!data/val_abs.txt

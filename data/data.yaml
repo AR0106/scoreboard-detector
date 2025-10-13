@@ -1,0 +1,4 @@
+train: /home/alexr/Developer/scoreboard-detector/data/Train_abs.txt
+val: /home/alexr/Developer/scoreboard-detector/data/val_abs.txt
+names:
+  0: Scoreboard
