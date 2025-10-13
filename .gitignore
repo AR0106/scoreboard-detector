@@ -40,5 +40,5 @@ yolo11n.pt
 yolov8n.pt
 !data/Train.txt
 !data/val.txt
-!data/train_abs.txt
+!data/Train_abs.txt
 !data/val_abs.txt

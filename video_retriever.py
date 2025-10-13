@@ -47,7 +47,7 @@ if hasattr(signal, 'SIGFPE'):
 ydl = YoutubeDL(ydl_search_opts)
 
 videos = ydl.extract_info(
-    f"ytsearch{1}:high school {sys.argv[1]} game stream", download=False
+    f"ytsearch{15}:high school {sys.argv[1]} game stream", download=False
 )
 
 video_urls = []
